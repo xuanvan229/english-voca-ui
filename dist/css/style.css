@@ -1,0 +1,68 @@
+.list-vocab {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list-vocab li {
+  padding: 1rem;
+  display: flex;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  background: #fff;
+}
+.list-vocab li:hover {
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+.list-vocab li:hover .delete-vocab {
+  display: block;
+}
+
+.app {
+  padding: 2rem 0;
+  min-height: 100vh;
+  background-image: url("/images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.app .button {
+  margin-top: 1rem;
+}
+.app .button button {
+  width: 100%;
+  background: #009077;
+  border-color: #009077;
+}
+
+.submit-form {
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  background: #eee;
+  margin-bottom: 2rem;
+}
+
+.delete-vocab {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  border: none;
+  outline: none;
+  background: none;
+  display: none;
+}
+.delete-vocab i {
+  color: red;
+}
+
+button:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=style.css.map */
